@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); 
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-icon a {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    margin: 0 8px;
+    z-index: 1;
+    text-align: center;
+    line-height: 45px;
+    transition: .3s;
+}
+
+.social-icon a:hover {
+    background: rgb(255, 255, 255);
+    transform: rotate(135deg);
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+}
+
+.social-icon a::before {
+content: '';
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 40px;
+height: 40px;
+background: transparent;
+z-index: -1;
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color: rgb(222, 224, 225);
+    transition: .3s;
+}
+
+.social-icon a:hover i {
+    transform: rotate(225deg);
+    color: rgb(223, 223, 223);
+} 
+
+.links a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+} 
+
+.links a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+} 
+
+.links a:hover::before{
+    width: 100%;
+} 
+
+ 
+

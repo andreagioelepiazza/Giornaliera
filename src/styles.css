@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url('https://static.vecteezy.com/ti/vettori-gratis/p1/3623626-tramonto-lago-paesaggio-illustrazione-gratuito-vettoriale.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }

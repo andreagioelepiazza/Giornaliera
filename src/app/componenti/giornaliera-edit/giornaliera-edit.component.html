@@ -1,0 +1,27 @@
+<div *ngIf="currentGiornaliera" class="edit-form">
+  <h4>Tutorial</h4>
+  <form>
+    <div class="form-group">
+      <label for="ore">Ore</label>
+      <input
+        type="number"
+        class="form-control"
+        id="Ore"
+        [(ngModel)]="currentGiornaliera.ore"
+        name="ore"
+      />
+    </div>
+    
+<div>
+  <button type="submit" class="badge badge-success" (click)="updateGiornaliera()">
+    Update
+  </button>
+  <p>{{ message }}</p>
+</div>
+
+<div *ngIf="!currentGiornaliera">
+  <br />
+  <p>Non posso accedere a questa giornaliera.</p>
+</div>
+  
+

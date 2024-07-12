@@ -1,0 +1,19 @@
+
+<header class="header">
+  <a href="welcome" class="logo">Televideocom</a>
+
+  <nav class="navbar"> 
+    <div class="social-icon">
+        <a href="https://www.facebook.com/televideocom/?locale=it_IT"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/televideocom-srl/mycompany/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="links">
+      <a routerLink="/dipendente"> Profilo</a>
+      <a routerLink="/giornaliera"> Giornaliera</a>
+      <a *ngIf="!BasicAuth.isLogged" routerLink="login">Login</a> 
+      <a *ngIf="BasicAuth.isLogged" routerLink="login" (click)="gestioneLogout()">Logout</a> 
+    </div> 
+   </nav> 
+
+  
+</header>

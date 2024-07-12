@@ -1,0 +1,72 @@
+
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          placeholder="Nome"
+          class="form-control"
+          id="nome"
+          required
+          [(ngModel)]="dipendente.nome"
+          name="nome"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="cognome">Cognome</label>
+        <input
+          class="form-control"
+          placeholder="Cognome"
+          id="cognome"
+          required
+          [(ngModel)]="dipendente.cognome"
+          name="cognome"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="codIdentificativo">Codice identificativo</label>
+        <input
+          class="form-control"
+          placeholder="Codice identificativo"
+          id="codIdentificativo"
+          required
+          [(ngModel)]="dipendente.codIdentificativo"
+          name="codIdentificativo"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          class="form-control"
+          placeholder="Username"
+          id="username"
+          required
+          [(ngModel)]="dipendente.username"
+          name="username"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="passeord">Password</label>
+        <input
+          class="form-control"
+          placeholder="password"
+          id="password"
+          required
+          [(ngModel)]="dipendente.password"
+          name="password"
+        />
+      </div>
+  
+      <button (click)="saveDipendente()" class="btn btn-success">Submit</button>
+    </div>
+  
+    <div *ngIf="submitted">
+      <h4>You submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newDipendente()">Add</button>
+    </div>
+  </div>

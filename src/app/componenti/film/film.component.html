@@ -1,0 +1,21 @@
+<h1>Film in catalogo</h1> 
+<table id="articoli" border="1"> 
+ <caption>Disponibili alla visione</caption> 
+ <thead> 
+ <tr> 
+ <th>Codice</th> 
+ <th>Titolo</th> 
+ <th>Anno</th> 
+ <th>Genere</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr *ngFor="let varFilm of films">  
+ <td>{{varFilm.id}}</td> 
+ <td>{{varFilm.titolo}}</td> 
+ <td>{{varFilm.anno}}</td> 
+ <td>{{varFilm.genere}}</td> 
+ </tr> 
+ </tbody> 
+</table> 
+

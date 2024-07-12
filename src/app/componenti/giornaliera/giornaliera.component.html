@@ -1,0 +1,42 @@
+
+  
+  <body>
+
+    
+    <main class="table">
+      <div class="div">
+         <button class="button-8" role="button" (click)="incrementEvent()">increment</button>
+            <button class="decrement" role="button" (click)="decrementEvent()">decrement</button>
+            <p>You have clicked the button {{ clickCount }} times.</p>
+      </div>
+     
+      <section class="table_body">
+        <table>
+          <thead>
+            <tr>
+                <th>#</th>
+                <th>Cognome</th>
+                <th>Nome</th>
+                <th>Giorno</th>
+                <th>Ore</th>
+                <th>Update</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- < *ngFor="let varGiornaliere of giornaliere" (click)="onRowClick(varGiornaliere)"> -->
+            <tr *ngFor="let varGiornaliere of giornaliere">
+              <td>{{varGiornaliere.id}}</td>
+              <td>{{varGiornaliere.cognomeDipendente}}</td>
+              <td>{{varGiornaliere.nomeDipendente}}</td>
+              <td>{{varGiornaliere.data}}</td>
+              <td><strong>{{varGiornaliere.ore}}</strong></td>
+              <!-- <button class="button-8" routerLink="/giornaliera/edit/{{ varGiornaliere.id }}">Modifica</button> -->
+              <button class="button-8" (click)="navigateTo(varGiornaliere.id!)">Modifica</button>
+              <!-- <td><button class="button-8" (click)="onEditClicked(varGiornaliere.id!)">Modifica</button></td> -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+  </body>
